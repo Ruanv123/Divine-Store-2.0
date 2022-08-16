@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-color: #101010;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburguer {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  border-radius: 10%;
+  position: relative;
+}
+
+.hamburguer:after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  height: 10%;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 1s ease;
+}
+
+.hamburguer:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 40%;
+  height: 10%;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 1s ease;
+}
+
+#hamburguer:checked ~ label .hamburguer:after {
+  transform: rotate(225deg);
+  top: 40%;
+  left: 15%;
+}
+
+#hamburguer:checked ~ label .hamburguer:before {
+  transform: rotate(-225deg);
+  width: 70%;
+  height: 10%;
+  top: 40%;
+  left: 15%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  margin-left: 10px;
+}
+.menu li #cart {
+  color: #fff;
+}
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #4B5567;
+  transition: 0.5s ease;
+}
+.menu li ahover {
+  color: #07617D;
+}
+
+@media screen and (max-width: 980px) {
+  .hamburguer {
+    display: block;
+    z-index: 999;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    width: 100%;
+    max-width: 250px;
+    padding: 100px 20px;
+    flex-direction: column;
+    transition: 0.5s ease;
+  }
+  .menu.active {
+    right: -100%;
+  }
+}
+
+/*# sourceMappingURL=roupas.css.map */
