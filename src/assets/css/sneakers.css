@@ -282,6 +282,32 @@ header {
   letter-spacing: -0.4px;
   color: #000000;
 }
+.flex-horizontal .filtros .tamanhos {
+  margin-top: 1vh;
+}
+.flex-horizontal .filtros .tamanhos p {
+  margin-top: 1vh;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  letter-spacing: -0.4px;
+  color: #000000;
+}
+.flex-horizontal .filtros .tamanhos .checks {
+  margin-top: 2vh;
+}
+.flex-horizontal .filtros .tamanhos .checks label {
+  margin: 25px 10px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: -0.4px;
+  color: #000000;
+}
 .flex-horizontal .filtros #filtrar {
   padding: 10px 50px;
   background-color: #000;
@@ -452,4 +478,10 @@ footer .flex .list .form #buton {
   margin-top: 1vh;
 }
 
-/*# sourceMappingURL=roupas.css.map */
+@media screen and (max-width: 1223px) {
+  .filtros {
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=sneakers.css.map */

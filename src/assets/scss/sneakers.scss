@@ -341,6 +341,36 @@ header {
             }
         }
 
+        .tamanhos {
+            margin-top: 1vh;
+            p {
+                margin-top: 1vh;
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 17px;
+                letter-spacing: -0.4px;
+                color: #000000;
+            }
+
+            .checks {
+                margin-top: 2vh;
+
+                label {
+                    margin: 25px 10px;
+
+                    font-family: 'Public Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 17px;
+                    letter-spacing: -0.4px;
+                    color: #000000;
+                }
+            }
+        }
+
         #filtrar {
             padding: 10px 50px;
             background-color: #000;
@@ -356,7 +386,6 @@ header {
 
     .color-picker {
         margin-bottom: 2vh;
-
         h6 {
             margin-top: 2vh;
             margin-bottom: 1vh;
@@ -411,23 +440,18 @@ header {
         #red {
             background-color: #ef5350;
         }
-
         #aqua {
             background-color: #56CCF2;
         }
-
         #black {
             background-color: #4F4F4F;
         }
-
         #pink {
             background-color: #BB6BD9;
         }
-
-        #white {
+        #white{
             background-color: #F2F2F2;
         }
-
         #green-olive {
             background-color: #6FCF97;
         }
@@ -478,7 +502,6 @@ header {
             }
         }
     }
-
     .pagination {
         display: flex;
     }
@@ -544,5 +567,10 @@ footer {
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 1223px) {
+    .filtros {
+        visibility: hidden;
     }
 }
